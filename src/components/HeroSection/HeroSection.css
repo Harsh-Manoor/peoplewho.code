@@ -47,12 +47,104 @@
 
 .community-section{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: #FDFCE5;
+    padding: 40px 60px;
+}
+
+.community-section img{
+    width: 30%;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.about-community{
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     width: 100%;
 }
 
-.community-section img{
-    width: 25%;
+.about-community h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #303030;
+    font-style: italic;
 }
+
+.about-community p{
+    width: 80%;
+    height: auto;
+    color: grey;
+    font-size: 1.1rem;
+}
+
+/* experience section */
+
+.experience-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.experience-section img{
+    width: 20%;
+}
+
+/* mentor section */
+
+.mentor-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: #FDFCE5;
+    padding: 40px 60px;
+}
+
+.mentor-section img{
+    width: 30%;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.about-mentor{
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-mentor h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #303030;
+    font-style: italic;
+}
+
+.about-mentor p{
+    width: 80%;
+    height: auto;
+    color: grey;
+    font-size: 1.1rem;
+}
+
+.contributer-link{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
