@@ -7,7 +7,6 @@ const HeroSection = () => {
         let x = (window.innerWidth / 2 - e.pageX) * 0.01;
         let y = (window.innerHeight / 2 - e.pageY) * 0.01;
         document.querySelector(".heroSectionImage").style.transform = `translate(${x}px, ${y}px)`;
-        // document.querySelector(".communityImage").style.transform = `translate(${x}px, ${y}px)`;
         
     }
 

@@ -3,6 +3,15 @@ import "./Footer.css"
 
 const Footer = () => {
 
+    const backToTop = ()=>{
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+
+    }
+
     const sendEmail = () => {
         const emailTo = "hello.adcratic@gmail.com";
         const emailCC = "";
@@ -14,6 +23,9 @@ const Footer = () => {
     return (
         <>
           <section className="footer">
+            <button className="backToTop-button" onClick={backToTop}>
+                <i class="fas fa-chevron-up"></i>
+            </button>
               <div className="footer-container">
                 <div className="footer-mail-container">
                     <h2>Help & Support</h2>
