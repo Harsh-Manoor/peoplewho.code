@@ -19,7 +19,7 @@ const HeroSection = () => {
             <section className="hero-section" onMouseMove={parallax}>
                 <img className="heroSectionImage" src="images/herosectionimage.png" alt="heroImage"/>
                 <h2>The Coding Community</h2>
-                <div className="w-node">
+                <div className="w-node" onClick={()=> window.open("https://wa.me/8872922886")}>
                     <i class="fab fa-whatsapp whatsappIcon"></i>
                     <p>let's start talking</p>
                     <i class="fas fa-arrow-right arrowIcon"></i>
@@ -47,8 +47,8 @@ const HeroSection = () => {
             <section className="mentor-section">
                 <div className="about-mentor">
                     <h2>Become a mentor...</h2>
-                    <p>If you’re a person who wants to give back to the community,<br/> we’ve got something for you.</p>
-                    <p className="contributer-link" onClick={openLink}>join contributer network -></p>
+                    <p>If you're a person who wants to give back to the community,<br/> we’ve got something for you.</p>
+                    <p className="contributer-link" onClick={openLink}>join contributer network</p>
                 
                 </div>
                 <img src='images/mentor.png' alt="mentorImage"/>

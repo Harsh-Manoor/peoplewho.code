@@ -65,19 +65,45 @@
     color: #303030;
 }
 
+.backToTop{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -30px;
+    right: 100px;
+}
 
 .backToTop-button{
     align-items: center;
     padding: 15px;
     cursor: pointer;
-    position: relative;
-    top: -30px;
     background-color: #E0DCFF;
-    border-radius: 40%;
+    border-radius: 50%;
     border: none;
+    height: 60px;
+    width: 60px;
 }
 
 .backToTop-button i{
     font-size: 30px;
     color: #303030;
+}
+
+.instagram:hover{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 300ms;
+}
+
+.linkedIn:hover{
+    color: #00669c;
+    transition: 300ms;
+}
+
+.twitter:hover{
+    color: #1DA1F2;
+    transition: 300ms;
 }
