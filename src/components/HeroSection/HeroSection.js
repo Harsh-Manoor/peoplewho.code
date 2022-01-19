@@ -1,5 +1,6 @@
 import React from 'react'
 import "./HeroSection.css"
+import Tabs from "../Tabs/Tabs"
 
 const HeroSection = () => {
 
@@ -40,7 +41,9 @@ const HeroSection = () => {
                 <img src="images/rocket.png" alt="rocketImage"/>
                 <div className="">
                     <h2>What's in it for You?</h2>
-                    
+                    <div className="experience-tab-section">
+                        <Tabs />
+                    </div>
                 </div>
             </section>
             

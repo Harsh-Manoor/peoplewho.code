@@ -1,16 +1,14 @@
 import React from 'react'
-// import HeroSection from '../components/HeroSection/HeroSection'
-// import Navbar from '../components/Navbar/Navbar'
-// import Footer from '../components/Footer/Footer'
-import Tabs from '../components/Tabs/Tabs'
+import HeroSection from '../components/HeroSection/HeroSection'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
 
 const Home = () => {
     return (
         <>
-          {/* <Navbar />
+          <Navbar />
           <HeroSection />
-          <Footer /> */}
-          <Tabs />
+          <Footer />
         </>
     )
 }

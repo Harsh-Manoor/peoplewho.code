@@ -14,12 +14,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 130px;
+    margin-left: 60px;
     height: 80px;
     max-width: 1500px !important;
   }
+
+  .nav-logo{
+    height: 30px;
+    margin-right: 10px;
+  }
   
-  .navbar-logo {
+  .navbar-text {
     color: #303030;
     justify-self: start;
     cursor: pointer;
