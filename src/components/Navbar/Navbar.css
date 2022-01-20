@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 60px;
+    margin-left: 40px;
     height: 80px;
     max-width: 1500px !important;
   }
@@ -175,3 +175,16 @@
     }
   }
   
+  @media screen and (max-width: 478px){
+    .navbar-logo-text{
+      display: none;
+    }
+
+    .nav-logo{
+      height: 40px;
+    }
+
+    .navbar-container{
+      margin-left: 20px;
+    }
+  }

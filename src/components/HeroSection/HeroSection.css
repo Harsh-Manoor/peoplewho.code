@@ -9,15 +9,18 @@
 }
 
 .heroSectionImage{
-    width: 46%;
-    margin: 40px;
+    width: 45%;
+    margin :50px auto 40px auto;
 }
 
 .hero-section h2{
+    height: auto;
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 10px;
     color: #303030;
+    padding: 0px 20px;
+    text-align: center;
 }
 
 .w-node{
@@ -42,6 +45,7 @@
     font-size: 1.5rem;
     margin: 0px 10px 0px 10px;
     color: #585858;
+    text-align: center;
     font-style: italic;
 }
 
@@ -49,27 +53,20 @@
 
 .community-section{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 100%;
     margin-bottom: 40px;
     background-color: #FDFCE5;
-    padding: 80px 60px;
-}
-
-.community-section img{
-    width: 30%;
-    align-items: center;
-    margin-right: 20px;
+    padding: 40px 60px;
 }
 
 .about-community{
-    padding-left: 20px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
 }
 
 .about-community h2{
@@ -81,10 +78,21 @@
 }
 
 .about-community p{
-    width: 80%;
+    width: 100%;
     height: auto;
     color: grey;
     font-size: 1.1rem;
+}
+
+.community-image{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.community-image img{
+    max-width: 70%;
+    object-fit:cover;
 }
 
 /* experience section */
@@ -151,4 +159,53 @@
 .contributer-link:hover{
     color: #000;
     transition: 400ms;
+}
+
+@media screen and (max-width: 960px){
+    .heroSectionImage{
+        width: 70%
+    }
+
+    .hero-section h2{
+        font-size: 2.4rem;
+    }
+
+    .w-node p{
+        font-size: 1.3rem;
+    }
+
+    .community-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-community{
+        width: 100%;
+    }
+    .community-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 460px){
+    .hero-section h2{
+        font-size: 1.8rem;
+    }
+    
+    .w-node p{
+        font-size: 1.1rem;
+    }
+
+    .w-node i{
+        font-size: 1.2rem;
+    }
+
+    .community-section{
+        padding: 30px;
+    }
+
 }

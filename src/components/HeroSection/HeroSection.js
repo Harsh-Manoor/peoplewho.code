@@ -34,7 +34,9 @@ const HeroSection = () => {
                     <br />Too early? Who cares. We're not the most experienced - but we're working on a lot of stuff & want you to be a part of our journey.
                     </p>
                 </div>
-                <img className="communityImage" src="images/community.png" alt="communityImage"/>
+                <div className='community-image'>
+                    <img src="images/community.png" alt="communityImage"/>
+                </div>
             </section>
 
             <section className="experience-section">
@@ -52,7 +54,6 @@ const HeroSection = () => {
                     <h2>Become a mentor...</h2>
                     <p>If you're a person who wants to give back to the community,<br/> we’ve got something for you.</p>
                     <p className="contributer-link" onClick={openLink}>join contributer network</p>
-                
                 </div>
                 <img src='images/mentor.png' alt="mentorImage"/>
             </section>

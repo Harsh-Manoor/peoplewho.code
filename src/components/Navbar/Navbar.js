@@ -26,7 +26,7 @@ const Navbar = () => {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-text' onClick={()=>{closeMobileMenu(); backToTop(); refreshPage();}}>
-            <img src='images/logo.png' className='nav-logo' alt='navLogo' /> peoplewho.code
+            <img src='images/logo.png' className='nav-logo' alt='navLogo' /> <span className='navbar-logo-text'>peoplewho.codes</span>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
