@@ -1,20 +1,30 @@
 .footer{
     width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    height: auto;
     background-color: #F2F1FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-container{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    padding: 60px 80px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Mail container */
+
+.footer-mail-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .footer-mail-container h2{
@@ -30,9 +40,14 @@
     cursor: pointer;
 }
 
-.footer-social-icons{
+/* Social container */
+
+.footer-social-container{
     display: flex;
-    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .footer-social-container h2{
@@ -47,46 +62,6 @@
     cursor: pointer;
     color: #303030;
     margin-right: 20px;
-}
-
-.copyright-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 0;
-    background-color: #F2F1FA;
-}
-
-.copyright-section p{
-    font-size: 1.8vw;
-    color: #303030;
-}
-
-.backToTop{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: -30px;
-    right: 100px;
-}
-
-.backToTop-button{
-    align-items: center;
-    padding: 15px;
-    cursor: pointer;
-    background-color: #E0DCFF;
-    border-radius: 50%;
-    border: none;
-    height: 60px;
-    width: 60px;
-}
-
-.backToTop-button i{
-    font-size: 30px;
-    color: #303030;
 }
 
 .instagram:hover{
@@ -107,78 +82,84 @@
     transition: 300ms;
 }
 
+.copyright-section{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.backToTop{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -30px;
+    padding-right: 40px;
+}
+
+.backToTop-button{
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #E0DCFF;
+    border-radius: 50%;
+    border: none;
+    height: 60px;
+    width: 60px;
+}
+
+.backToTop-button i{
+    font-size: 30px;
+    color: #303030;
+}
+
 @media screen and (max-width: 960px){
-    .footer-mail-container h2{
+    .footer-mail-container h2 , 
+    .footer-social-container h2{
         font-size: 2rem;
+        margin-bottom: 20px;
     }
 
     .footer-mail-container p{
         font-size: 1.2rem;
     }
 
-
-    .footer-social-container h2{
-        font-size: 2rem;
-    }
-    
     .footer-social-icons i{
         font-size: 25px;
     }
+
 }
 
-@media screen and (max-width: 700px){
-    
-    .footer-container{
-        padding: 40px;
-    }
-
-    .footer-mail-container h2{
-        font-size: 1.6rem;
+@media screen and (max-width: 460px){
+    .footer-mail-container h2 , 
+    .footer-social-container h2{
+        font-size: 6vw;
+        margin-bottom: 20px;
     }
 
     .footer-mail-container p{
-        font-size: 1rem;
-    }
-
-
-    .footer-social-container h2{
-        font-size: 1.6rem;
+        font-size: 4vw;
     }
 
     .footer-social-icons i{
         font-size: 20px;
     }
 
-    .backToTop{
-        position: relative;
-        top: -30px;
-        right: 70px;
+    .copyright-section{
+        font-size: 3vw;
     }
 
+    /* back to top */
+    
     .backToTop-button{
-        padding: 10px;
+        padding: 5px;
+        height: 50px;
+        width: 50px;
     }
-}
-
-@media screen and (max-width: 460px){
-       .footer-container{
-            display: flex;
-            flex-direction: column;
-       }
-
-       .footer-mail-container{
-           margin-bottom: 40px;
-       }
-
-       .backToTop{
-        position: relative;
-        top: -30px;
-        right: 70px;
-        }
-
-        .backToTop{
-            position: relative;
-            top: -30px;
-            right: 40px;
-        }
+    
+    .backToTop-button i{
+        font-size: 20px;
+    }
 }
