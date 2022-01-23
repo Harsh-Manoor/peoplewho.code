@@ -17,6 +17,7 @@ const HeroSection = () => {
 
     return (
         <>
+            {/* Hero Section */}
             <section className="hero-section" onMouseMove={parallax}>
                 <img className="heroSectionImage" src="images/herosectionimage.png" alt="heroImage"/>
                 <h2>The Coding Community</h2>
@@ -27,15 +28,18 @@ const HeroSection = () => {
                 </div>
             </section>
 
+            {/* Community section */}
             <section className="community-section">
-                <div className="about-community">
+                <div className="community-section-heading">
                     <h2>Another coding community?</h2>
-                    <p>Umm... No. We're The Coding Community. <br />May sound weird, but we're a bunch of 4-something people who are a cobination of designers, coder and developers, who want to give back to the community. <br/>
-                    <br />Too early? Who cares. We're not the most experienced - but we're working on a lot of stuff & want you to be a part of our journey.
-                    </p>
                 </div>
-                <div className='community-image'>
-                    <img src="images/community.png" alt="communityImage"/>
+                <div className='community-section-content'>
+                    <p>Umm... No. We're The Coding Community. <br />May sound weird, but we're a bunch of 4-something people who are a cobination of designers, coder and developers, who want to give back to the community. <br/>
+                        <br />Too early? Who cares. We're not the most experienced - but we're working on a lot of stuff & want you to be a part of our journey.
+                    </p>
+                    <div className='community-image'>
+                        <img src="images/community.png" alt="communityImage"/>
+                    </div>
                 </div>
             </section>
 

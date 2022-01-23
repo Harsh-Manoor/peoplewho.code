@@ -1,17 +1,16 @@
 .hero-section{
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(220deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.0033147047881653124) 72%, rgba(0,212,255,0.350653640362395) 100%); 
+    background: linear-gradient(220deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.0033147047881653124) 72%, rgba(0,212,255,0.350653640362395) 100%);
 }
 
-.heroSectionImage{
-    width: 45%;
-    margin :50px auto 40px auto;
+.hero-section img{
+    max-width: 50vw;
+
 }
 
 .hero-section h2{
@@ -20,7 +19,6 @@
     font-weight: 700;
     margin-bottom: 10px;
     color: #303030;
-    padding: 0px 20px;
     text-align: center;
 }
 
@@ -50,50 +48,56 @@
     font-style: italic;
 }
 
+
 /* community section */
 
 .community-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
     width: 100%;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #FDFCE5;
-    padding: 40px 60px;
+    padding: 40px;
 }
 
-.about-community{
+.community-section-heading{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
-    width: 50%;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.about-community h2{
+.community-section-heading h2{
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 30px;
     color: #303030;
     font-style: italic;
 }
 
-.about-community p{
+.community-section-content{
+    display: flex;
     width: 100%;
-    height: auto;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.community-section-content p{
     color: grey;
+    line-break: auto;
     font-size: 1.1rem;
+    flex: 2;
 }
 
 .community-image{
-    width: 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex: 1;
 }
 
 .community-image img{
-    max-width: 70%;
-    object-fit:cover;
+    width: 20vw;
 }
 
 /* experience section */
@@ -163,50 +167,11 @@
 }
 
 @media screen and (max-width: 960px){
-    .heroSectionImage{
-        width: 70%
-    }
-
-    .hero-section h2{
-        font-size: 2.4rem;
-    }
-
-    .w-node p{
-        font-size: 1.3rem;
-    }
-
-    .community-section{
-        display: flex;
+    .community-section-content{
         flex-direction: column-reverse;
     }
-
-    .about-community{
-        width: 100%;
-    }
-    .community-image{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    
 }
 
 @media screen and (max-width: 460px){
-    .hero-section h2{
-        font-size: 1.8rem;
-    }
     
-    .w-node p{
-        font-size: 1.1rem;
-    }
-
-    .w-node i{
-        font-size: 1.2rem;
-    }
-
-    .community-section{
-        padding: 30px;
-    }
-
 }
