@@ -44,7 +44,8 @@ const Tabs = () => {
 
             <div className={toggleState === 3 ? "content  active-content" : "content"}>
               <p>
-                Welcome to the community - we're excited you're here!
+                Welcome to the community - we're excited you're here! Welcome to the community - we're excited you're here!
+                Welcome to the community - we're excited you're here!Welcome to the community - we're excited you're here!
               </p>
             </div>
           </div>

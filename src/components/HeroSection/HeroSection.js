@@ -34,7 +34,7 @@ const HeroSection = () => {
                     <h2>Another coding community?</h2>
                 </div>
                 <div className='community-section-content'>
-                    <p>Umm... No. We're The Coding Community. <br />May sound weird, but we're a bunch of 4-something people who are a cobination of designers, coder and developers, who want to give back to the community. <br/>
+                    <p>Umm... No. We're The Coding Community. <br />May sound weird, but we're a bunch of 4-something people who are a cobination of designers, coder and developers, who want to give back to the mentor. <br/>
                         <br />Too early? Who cares. We're not the most experienced - but we're working on a lot of stuff & want you to be a part of our journey.
                     </p>
                     <div className='community-image'>
@@ -43,24 +43,36 @@ const HeroSection = () => {
                 </div>
             </section>
 
+            {/* Experience section */}
             <section className="experience-section">
-                <img src="images/rocket.png" alt="rocketImage"/>
-                <div className="">
+                <div className="experience-section-heading">
                     <h2>What's in it for You?</h2>
+                </div>
+
+                <div className="experience-section-content">
+                    <div className="experience-section-image">
+                        <img src="images/rocket.png" alt="rocketImage"/>
+                    </div>
                     <div className="experience-tab-section">
                         <Tabs />
                     </div>
                 </div>
             </section>
             
+            {/* Mentor Section */}
             <section className="mentor-section">
-                <div className="about-mentor">
+                <div className="mentor-section-heading">
                     <h2>Become a mentor...</h2>
-                    <p>If you're a person who wants to give back to the community,<br/> we’ve got something for you.</p>
-                    <p className="contributer-link" onClick={openLink}>join contributer network</p>
                 </div>
-                <img src='images/mentor.png' alt="mentorImage"/>
+                <div className='mentor-section-content'>
+                    <p>If you're a person who wants to give back to the community,<br/> we’ve got something for you.</p>
+                    {/* <p className="contributer-link" onClick={openLink}>join contributer network</p> */}
+                    <div className='mentor-image'>
+                        <img src="images/mentor.png" alt="communityImage"/>
+                    </div>
+                </div>
             </section>
+
         </>
     )
 }

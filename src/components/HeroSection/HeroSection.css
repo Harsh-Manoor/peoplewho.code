@@ -9,7 +9,8 @@
 }
 
 .hero-section img{
-    max-width: 50vw;
+    max-width: 40vw;
+    margin-bottom: 30px;
 
 }
 
@@ -66,7 +67,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .community-section-heading h2{
@@ -84,6 +84,7 @@
 }
 
 .community-section-content p{
+    padding-top: 50px;
     color: grey;
     line-break: auto;
     font-size: 1.1rem;
@@ -103,61 +104,102 @@
 /* experience section */
 
 .experience-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffebe6;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.experience-section-heading{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    padding: 80px 60px;
+    margin-bottom: 50px;
 }
 
-.experience-section img{
-    width: 20%;
+.experience-section-heading h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #303030;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.experience-section-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.experience-section-image{
+    flex: 1;
+}
+
+.experience-section-image img{
+    width: 18vw;
+}
+
+.experience-tab-section{
+    flex: 2;
 }
 
 /* mentor section */
 
 .mentor-section{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
     width: 100%;
-    margin-bottom: 80px;
-    /* background-color: #FDFCE5; */
-    padding: 80px 60px;
-}
-
-.mentor-section img{
-    width: 30%;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.about-mentor{
-    padding-left: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 100%;
+    background-color: #ecfeff;
+    padding: 50px;
 }
 
-.about-mentor h2{
+.mentor-section-heading{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mentor-section-heading h2{
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 30px;
     color: #303030;
     font-style: italic;
 }
 
-.about-mentor p{
-    width: 80%;
-    height: auto;
+.mentor-section-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.mentor-section-content p{
     color: grey;
+    line-break: auto;
     font-size: 1.1rem;
+    flex: 2;
+    padding-top: 40px;
+}
+
+.mentor-image{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.mentor-image img{
+    width: 20vw;
 }
 
 .contributer-link{
-    margin-top: 30px;
     cursor: pointer;
 }
 
