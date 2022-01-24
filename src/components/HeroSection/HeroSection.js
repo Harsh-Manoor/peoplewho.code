@@ -8,23 +8,26 @@ const HeroSection = () => {
         let x = (window.innerWidth / 2 - e.pageX) * 0.01;
         let y = (window.innerHeight / 2 - e.pageY) * 0.01;
         document.querySelector(".heroSectionImage").style.transform = `translate(${x}px, ${y}px)`;
-        
     }
 
-    const openLink = ()=>{
-        window.open("https://www.adcratic.com")
-    }
+    // const openLink = ()=>{
+    //     window.open("https://www.adcratic.com")
+    // }
 
     return (
         <>
             {/* Hero Section */}
-            <section className="hero-section" onMouseMove={parallax}>
-                <img className="heroSectionImage" src="images/herosectionimage.png" alt="heroImage"/>
-                <h2>The Coding Community</h2>
-                <div className="w-node" onClick={()=> window.open("https://wa.me/8872922886")}>
-                    <i class="fab fa-whatsapp whatsappIcon"></i>
-                    <p>let's start talking</p>
-                    <i class="fas fa-arrow-right arrowIcon"></i>
+            <section className='heroSection' onMouseMove={(e) => parallax(e)}>
+                <div className='heroSectionImage'>
+                    <img src="images/herosectionimage.png" alt="heroImage"/>
+                </div>
+                <div className='heroSectionText'>
+                    <h2>The Coding Community</h2>
+                    <div className="w-node" onClick={()=> window.open("https://wa.me/8872922886")}>
+                        <i class="fab fa-whatsapp whatsappIcon"></i>
+                        <p>let's start talking</p>
+                        <i class="fas fa-arrow-right arrowIcon"></i>
+                    </div>
                 </div>
             </section>
 

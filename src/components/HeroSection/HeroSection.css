@@ -1,21 +1,36 @@
-.hero-section{
+.heroSection{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding: 0px 40px 40px;
     background: linear-gradient(220deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.0033147047881653124) 72%, rgba(0,212,255,0.350653640362395) 100%);
 }
 
-.hero-section img{
-    max-width: 40vw;
-    margin-bottom: 30px;
-
+.heroSectionImage{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.hero-section h2{
-    height: auto;
+.heroSectionImage img{
+    width: 650px;
+}
+
+.heroSectionText{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.heroSectionText h2{
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 10px;
@@ -37,7 +52,7 @@
 }
 
 .arrowIcon{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #303030;
 }
 
@@ -156,8 +171,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #ecfeff;
+    /* background-color: #ecfeff; */
     padding: 50px;
+    margin-bottom: 40px;
 }
 
 .mentor-section-heading{
@@ -209,11 +225,89 @@
 }
 
 @media screen and (max-width: 960px){
+
+    .heroSection{
+        padding: 0px 20px;
+    }
+
+    .heroSectionImage img{
+        width: 70vw;
+    }
+
+    .heroSectionText h2{
+        font-size: 2rem;
+    }
+
+    .w-node p{
+        font-size: 1.2rem;
+    }
+
     .community-section-content{
         flex-direction: column-reverse;
+    }
+
+    .community-section-heading h2{
+        font-size: 2rem;
+    }
+
+    .community-image img{
+        width: 30vw;
+        margin-top: 30px;
+    }
+
+    .experience-section-heading h2{
+        font-size: 2rem;
+    }
+
+    .experience-section-content{
+        flex-direction: column;
+    }
+
+    .experience-section-image{
+        display: none;
+    }
+
+    .mentor-section-heading h2{
+        font-size: 2rem;
+    }
+
+    .mentor-section-content{
+        flex-direction: column-reverse;
+    }
+
+    .mentor-image img{
+        width: 30vw;
+        margin-top: 30px;
     }
 }
 
 @media screen and (max-width: 460px){
-    
+
+    .heroSection{
+        padding: 0px 20px;
+    }
+
+    .heroSectionText h2{
+        font-size: 1.8rem;
+    }
+
+    .heroSectionImage img{
+        width: 80vw;
+    }
+
+    .heroSectionImage{
+        flex: 1;
+    }
+
+    .heroSectionText{
+        flex: 1;
+    }
+
+    .community-image img{
+        width: 40vw;
+    }
+
+    .mentor-image img{
+        width: 40vw;
+    }
 }

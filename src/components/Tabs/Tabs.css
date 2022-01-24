@@ -18,8 +18,12 @@
     flex-direction: row;
     width: 100%;
     justify-content: flex-start;
-    padding: 10px 0px;
+    flex-wrap: wrap;
     background-color: transparent;
+}
+
+.button-container button{
+    margin-bottom: 20px;
 }
 
 .tabs{

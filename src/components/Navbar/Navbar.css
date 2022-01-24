@@ -111,7 +111,7 @@
     .nav-menu.active {
       display: flex;
       justify-content: center;
-      background: #be18ff;
+      background: #f3d4ff;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
