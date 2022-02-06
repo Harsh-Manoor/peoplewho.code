@@ -21,9 +21,8 @@
 
 .footer-mail-container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
     padding: 20px;
 }
 
@@ -35,7 +34,7 @@
 }
 
 .footer-mail-container p{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #303030;
     cursor: pointer;
 }
@@ -46,7 +45,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
     padding: 20px;
 }
 

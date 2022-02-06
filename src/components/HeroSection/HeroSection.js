@@ -1,6 +1,7 @@
 import React from 'react'
 import "./HeroSection.css"
 import Tabs from "../Tabs/Tabs"
+import Carousel from '../Carousel/Carousel'
 
 const HeroSection = () => {
 
@@ -10,9 +11,9 @@ const HeroSection = () => {
         document.querySelector(".heroSectionImage").style.transform = `translate(${x}px, ${y}px)`;
     }
 
-    // const openLink = ()=>{
-    //     window.open("https://www.adcratic.com")
-    // }
+    const openLink = ()=>{
+        window.open("https://www.adcratic.com")
+    }
 
     return (
         <>
@@ -23,9 +24,9 @@ const HeroSection = () => {
                 </div>
                 <div className='heroSectionText'>
                     <h2>The Coding Community</h2>
-                    <div className="w-node" onClick={()=> window.open("https://wa.me/8872922886")}>
+                    <div className="w-node" onClick={()=> window.open("https://vectorzz.typeform.com/peoplewhocode")}>
                         <i class="fab fa-whatsapp whatsappIcon"></i>
-                        <p>let's start talking</p>
+                        <p><mark>let's start talking</mark></p>
                         <i class="fas fa-arrow-right arrowIcon"></i>
                     </div>
                 </div>
@@ -48,15 +49,14 @@ const HeroSection = () => {
 
             {/* Experience section */}
             <section className="experience-section">
-                <div className="experience-section-heading">
-                    <h2>What's in it for You?</h2>
-                </div>
-
                 <div className="experience-section-content">
                     <div className="experience-section-image">
                         <img src="images/rocket.png" alt="rocketImage"/>
                     </div>
                     <div className="experience-tab-section">
+                        <div className="experience-section-heading">
+                            <h2>What's in it for You?</h2>
+                        </div>
                         <Tabs />
                     </div>
                 </div>
@@ -68,14 +68,18 @@ const HeroSection = () => {
                     <h2>Become a mentor...</h2>
                 </div>
                 <div className='mentor-section-content'>
-                    <p>If you're a person who wants to give back to the community,<br/> we’ve got something for you.</p>
-                    {/* <p className="contributer-link" onClick={openLink}>join contributer network</p> */}
+                    <div className='mentor-section-p'>
+                        <p>If you're a person who wants to give back to the community,<br/> we’ve got something for you.</p>
+                        <p className="contributer-link" onClick={openLink}><mark>join contributer network</mark></p>
+                    </div>
                     <div className='mentor-image'>
                         <img src="images/mentor.png" alt="communityImage"/>
                     </div>
                 </div>
             </section>
 
+            {/* partner container */}
+            <Carousel />
         </>
     )
 }
