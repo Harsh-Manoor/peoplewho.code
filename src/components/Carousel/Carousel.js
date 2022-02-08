@@ -12,6 +12,11 @@ import { Pagination, Navigation } from "swiper";
 import { CarouselData } from "./CarouselData";
 
 const Carousel =()=>{
+
+    const redirectSite = (url) => {
+        window.open(url);
+    }
+
     return(
         <>
             <section className="p-container">
@@ -26,6 +31,9 @@ const Carousel =()=>{
                         loop={true}
                         loopFillGroupWithBlank={true}
                         navigation={true}
+                        pagination={{
+                            clickable: true,
+                        }}
                         modules={[Pagination, Navigation]}
                         className="mySwiper"
                     >
@@ -33,7 +41,7 @@ const Carousel =()=>{
                         {CarouselData.map((data,index)=>{
                             return(
                                 <SwiperSlide key={index}>
-                                    <div className="logos-container" onClick={data.link}>
+                                    <div className="logos-container" onClick={()=>redirectSite(data.link)}>
                                         <img src={data.path} alt="logo"/>
                                     </div>
                                 </SwiperSlide>

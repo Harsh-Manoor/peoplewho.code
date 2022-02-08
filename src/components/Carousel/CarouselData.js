@@ -1,7 +1,7 @@
 export const CarouselData = [
     {
         id: 1,
-        path: "images/partner/.xyz.png",
+        path: "images/partner/xyz.png",
         link: "https://gen.xyz/"
     },
     {
@@ -61,48 +61,48 @@ export const CarouselData = [
     },
     {
         id: 13,
-        path: "images/partner/Icon8.png",
-        link: ""
+        path: "images/partner/Icons8.png",
+        link: "https://icons8.com/"
     },
     {
         id: 14,
         path: "images/partner/Jetbrains.png",
-        link: ""
+        link: "https://www.jetbrains.com/"
     },
     {
         id: 15,
         path: "images/partner/NoticeBard.png",
-        link: ""
+        link: "https://www.noticebard.com/"
     },
     {
         id: 16,
         path: "images/partner/Polygon.png",
-        link: ""
+        link: "https://polygon.technology/"
     },
     {
         id: 17,
         path: "images/partner/repl.it.png",
-        link: ""
+        link: "https://replit.com/"
     },
     {
         id: 18,
         path: "images/partner/StreamYard.png",
-        link: ""
+        link: "https://streamyard.com/"
     },
     {
         id: 19,
         path: "images/partner/Taskade.png",
-        link: ""
+        link: "https://www.taskade.com/"
     },
     {
         id: 20,
         path: "images/partner/Tezos.png",
-        link: ""
+        link: "https://tezos.com/"
     },
     {
         id: 21,
         path: "images/partner/YouthIncorporated.png",
-        link: ""
+        link: "https://youthincmag.com/"
     }    
 
 ]
