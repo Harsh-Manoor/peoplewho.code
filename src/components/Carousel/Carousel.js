@@ -21,13 +21,17 @@ const Carousel =()=>{
         <>
             <section className="p-container">
                 <div className="p-heading-container">
-                    <h2>What people say about us</h2>
+                    <h2>Our previous partners</h2>
                 </div>
                 <div className="p-list-container">
                     <Swiper
                         slidesPerView={6}
                         spaceBetween={30}
                         slidesPerGroup={3}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
                         loop={true}
                         loopFillGroupWithBlank={true}
                         navigation={true}
