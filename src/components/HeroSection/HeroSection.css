@@ -5,7 +5,6 @@ mark{
     
 }
 
-
 .heroSection{
     display: flex;
     justify-content: center;
@@ -212,12 +211,20 @@ mark{
     flex-direction: row;
 }
 
-.mentor-section-content p{
+.mentor-section-p{
     color: grey;
     line-break: auto;
     font-size: 1.1rem;
     flex: 2;
     padding-top: 40px;
+}
+
+.mentor-section-p > p{
+    margin-bottom: 30px;
+}
+
+.mentor-section-p i{
+    margin-left: 15px;
 }
 
 .mentor-image{

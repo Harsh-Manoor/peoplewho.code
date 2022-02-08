@@ -70,7 +70,7 @@ const HeroSection = () => {
                 <div className='mentor-section-content'>
                     <div className='mentor-section-p'>
                         <p>If you're a person who wants to give back to the community,<br/> we’ve got something for you.</p>
-                        <p className="contributer-link" onClick={openLink}><mark>join contributer network</mark></p>
+                        <p className="contributer-link" onClick={openLink}><mark>join contributer network <i class="fas fa-arrow-right"></i></mark></p>
                     </div>
                     <div className='mentor-image'>
                         <img src="images/mentor.png" alt="communityImage"/>
